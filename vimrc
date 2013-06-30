@@ -1,4 +1,5 @@
 set nocompatible
+set t_Co=256
 
 " Pathogen
 call pathogen#infect()
@@ -22,9 +23,9 @@ elseif has("clipboard")
 endif
 
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 
 " Nerdtree
 autocmd VimEnter * NERDTree
@@ -40,7 +41,7 @@ let g:nerdtree_tabs_open_on_gui_startup=0
 map <C-n> :NERDTreeToggle<CR>
  
 set background=dark
-colorscheme desert
+colorscheme elflord
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -48,5 +49,4 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 1
-hi IndentGuidesOdd  ctermbg=black
-hi IndentGuidesEven ctermbg=darkgrey
+let g:indent_guides_auto_colors = 1
