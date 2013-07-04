@@ -13,8 +13,8 @@ up(){
 down(){
   echo "cloning repository to local"
   git pull origin master
-  cp vim/* ~/.vim
-  cp vimrc ~/.vimrc
+  cp vim/* ~/.vim -rf
+  cp vimrc ~/.vimrc -rf
 }
 
 case $1 in
