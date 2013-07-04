@@ -1,5 +1,9 @@
 set nocompatible
-set t_Co=256
+if system("tput colors") == 8
+  set t_Co=8
+else
+  set t_Co=256
+endif
 
 " Pathogen
 call pathogen#infect()
